@@ -40,6 +40,7 @@ body{
     grid-row: 3fr 2fr;
     gap: 8px;
     background-color: var(--gray-violet);
+    padding-left: 10px;
 }
 
 
@@ -186,15 +187,31 @@ ul{
 }
 
 
-.trending.profile{
+.trending-profile{
     display: grid;
-    grid-template-columns: 28px 1fr;
+    grid-template-columns: 50px 1fr;
+    margin: 12px 0;
+    gap:10px;
+    align-items: center;
+}
+
+.annoucements{
+    margin-top: 12px;
 }
 
 .annoucements-conteiner{
     display: grid;
     grid-template-rows: repeat(3,1fr);
     gap: 8px;
+    margin-top: 10px;
+}
+.annoucements-conteiner,
+.trending-conteiner{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow:1px 3px 5px 0px rgba(32, 32, 32, 0.35);
 }
 
 .buttons{
@@ -237,8 +254,29 @@ input[type="search"]{
     border-radius: 10px;
     padding: 8px 18px;
     margin-top: 10px;
+    box-shadow:1px 3px 5px 0px rgba(32, 32, 32, 0.35);
 }
 
 .title{
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
+
+.annoucement h3{
+    font-size: 16px;
+}
+.annoucement{
+    font-size: 14px;
+}
+
+.annoucement + .annoucement{
+    padding-top: 8px;
+    border-top: 1px solid rgb(37, 35, 35);
+}
+.trending-profile p{
+    font-weight: 200;
+}
+
+.profile-user p{
+    font-weight: 400;
+}
+
